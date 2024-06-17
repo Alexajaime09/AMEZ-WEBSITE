@@ -1,0 +1,154 @@
+:root{
+  --darkblue : #242A56;
+--lightblue : #749BE7;
+--bg : #EFF2FF;
+--gradient : linear-gradient(to bottom right, #2a305f,#242a5652);
+--bold: 600;
+--semibold: 500;
+--parrafo:1.8rem;
+}
+
+/* ======================== Globals ========================*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "YOPQ" 300;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+h1,h2,h3{
+  font-weight: var(--bold);
+  color: var(--darkblue)
+}
+
+/*========== Reusable ============*/
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.grid{
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/*================== HEADER ==================*/
+
+.header {
+  background-image: url('img/portada.jpeg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.header-shadow{
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-color: #2a2727;
+  opacity: 65%;
+  z-index: -1;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+}
+.nav-back{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #123d92;
+  backdrop-filter: blur(3px);
+  opacity: 70%;
+ 
+}
+
+.logo{
+  z-index: 2;
+}
+.logo img{
+  width: 200px;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+}
+ul li a {
+  position:relative;
+  color: white;
+  margin: 0 20px;
+  font-size: var(--parrafo);
+}
+.nav-item a::before{
+content: '';
+position: absolute;
+bottom: 0;
+left:0;
+height:2px;
+width:0%;
+background-color:whitesmoke;
+transition: all 0.4s ease;
+}
+.nav-item a:hover::before{
+  width: 100%;
+}
+
+.center a::before {
+left:50%;
+transform: translateX(-50%)
+}
+
+.header-content{
+  width:100%;
+  margin: auto;
+  margin-top: 170px;
+  color: whitesmoke
+}
+
+.header-content h1{
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 4.5rem;
+}
+
+.header-content p{
+  line-height: 1.8;
+  font-size: var(--parrafo);
+}
