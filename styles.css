@@ -160,12 +160,67 @@ transform: translateX(-50%)
 }
 
 
+/*=============== ABOUT-US ====================*/
+
+.about-us {
+  background:#e8e8e8;;
+  width: 100vw;
+ text-align: center;
+}
+.about-us h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color:#5883c3;
+}
+
+.about-us h4{
+  font-size:1.8rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+.container-about-us{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  gap: 40px;
+  max-width: 90%;
+}
+
+.about-title{
+  margin: auto;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  color:#5883c3;
+}
+.about-p{
+  text-align: justify;
+}
+.about-philosophy{
+  grid-column: span 2;
+  margin-top: 2.4rem;
+}
+.about-philosophy ul{
+  list-style: circle;
+  list-style-position: inside;
+}
+.about-philosophy li{
+  text-align: justify;
+ 
+  font-size: var(--parrafo);
+  color: #666666;
+
+  
+}
+
+
 /* =========== SERVICES =========== */
 .services{
   background: #f4f4f4;
   width: 100vw;
+  text-align: center;
 }
-.services h2, p{
+.services p{
   text-align: center;
   max-width: 90%;
   margin: auto;
@@ -211,22 +266,10 @@ margin-top: 3rem;
 .service-info1 ul li{
   font-size: 1.3rem;
   color:#5883c3;
-
+  text-align: left;
 
 }
 
-
-.service-shadow{
-content: '';
-position: absolute;
-right: 0%;
-top: 0%;
-width: 100%;
-height: 100%;
-background-color: rgba(16, 16, 16, 0.4);
-backdrop-filter: blur(1px);
-z-index: 2;
-}
 .service h2{
   font-size: 2rem;
   margin-top: 2rem;
@@ -234,53 +277,20 @@ z-index: 2;
   color:#344f9d;
 
 }
-.service-img{
-  position: relative;
-  width:100%;
-  height: 100%;
-  overflow: hidden;
-}
-.service-img1{
-  position: relative;
-  width:100%;
-  height: 78%;
-  overflow: hidden;
-  padding: 5px;
-}
-.service-img1 img{
-  object-fit: cover;
-  background-position: center;
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  height: 100%;
-  right: 0%;
-  top:0%
-}
-.service img{
-  object-fit: cover;
-  background-position: center;
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  height: 100%;
-}
+
 .service-info{
   position: absolute;
   color: whitesmoke;
   top: 20%;
   z-index: 3;
 }
+
 .service-info h2{
 font-size: 2rem;
 margin-top: 3rem;
 color: whitesmoke;
 }
-.service-info ul{
-  margin-top: 3rem;
-  padding-left:2rem;
-}
-.service-info li{
-line-height: 3.3rem;
-font-size: 1.rem;
-}
+
+
+
+
