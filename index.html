@@ -32,30 +32,48 @@
 
     <!--=================== HEADER ======================-->
 
-    <header class="header" #header>
-        <div class="header-shadow"></div>
-        <div class="container">
+    <header class="bar-nav" #header>
+      
             <nav class="nav">
-                <div class="nav-back"></div>
+              
                 <div class="logo">
                     <img src="./img/gancho min AME.png" alt="">
                 </div>
+
+                <input type="checkbox" id="check">
+
+                <label for="check" class="icons">
+                    <i class='bx bx-menu' id="open-menu"></i>
+                    <i class='bx bx-x' id="close-menu"></i>
+                </label>
+
                 <ul class="nav-list"> 
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item center"><a href="">About</a></li>
-                    <li class="nav-item center"><a href="">Service</a></li>
-                    <li class="nav-item"><a href="">Contact</a></li>
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item center"><a href="#about-us">About</a></li>
+                    <li class="nav-item center"><a href="#service">Service</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-    
-            <div class="header-content">
+
+        </header>
+
+            <div class="main-hero">
+            
+                <div class="hero-shadow"></div>
+
+                    <div class="hero-content">
+                        <div class="hero-container">
+                        <h1>Providing High-quality Cleaning Solutions </h1>
+                        <p> We specialize in providing high-quality cleaning solutions tailored to the unique needs of each client. Our team of highly trained experts is committed to excellence, ensuring a clean, safe, and healthy environment for you and your loved ones</p>
+
+                        </div>
               
-                <h1>Providing High-quality Cleaning Solutions </h1>
-                <p> We specialize in providing high-quality cleaning solutions tailored to the unique needs of each client. Our team of highly trained experts is committed to excellence, ensuring a clean, safe, and healthy environment for you and your loved ones</p>
-            </div>
+                    </div>
+
+              
         </div>
 
-    </header>
+    
 
     <section class="about-us">
         <h2> About us</h2>
@@ -197,7 +215,7 @@
     <div class="contact-us" >
 
         <p class="texto">
-            Enter your information to contact you or contact us at the following email <a href="mailto:">mextoy@gmail.com</a>
+            Enter your information to contact you or contact us at the following email: <a href="mailto:">mextoy@gmail.com</a>
         </p>
 
     
