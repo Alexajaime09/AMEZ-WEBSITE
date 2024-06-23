@@ -449,6 +449,9 @@ footer p{
     flex-direction: column;
   }
 
+  .nav{
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width:835px){
@@ -476,7 +479,6 @@ footer p{
   #close-menu{
     display: none;
   }
- 
 
   .nav-list{
     position: absolute;
