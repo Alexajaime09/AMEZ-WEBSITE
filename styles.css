@@ -76,7 +76,7 @@ section {
   height: 100px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0;
   background-color: rgba(18, 61, 146,1);
