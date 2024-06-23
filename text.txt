@@ -1,0 +1,56 @@
+<div class="service-info1">
+                        <ul>
+                            <li>Servicio de Desinfección</li>
+                            <li>Limpieza de Hospitales</li>
+                            <li>Limpieza de Oficinas</li>
+                            <li>Limpieza en asilos</li>
+                            <li>Limpieza de Ofecinas</li>
+                        </ul>
+                    </div>
+
+
+  <div class="service">
+                    <h2>Residencial Service(houses)</h2>
+                    <div class="service-icon">
+                        <i id="icon" class='bx bx-home-alt-2'></i>
+                    </div>
+                    <div class="service-info1">
+                        <ul>
+                            <li>Baño</li>
+                            <li>Cocina</li>
+                            <li>Trapear</li>
+                            <li>Predes</li>
+                            <li>Remover polvo</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+    <div class="service">
+                    <h2>Comercial Services</h2>
+                    <div class="service-icon">
+                        <i id="icon" class='bx bxs-store-alt'></i>
+                    </div>
+                    <div class="service-info1">
+                        <ul>
+                            <li>Stores</li>
+                            <li>Limpieza de Comercios</li>
+                            <li>Limpieza de Tiendas</li>
+                            <li>Limpieza de Restaurantes</li>
+                        </ul>
+                    </div>
+                </div>
+
+      <div class="service">
+                    <h2> Industrial Service</h2>
+                    <div class="service-icon">
+                        <i id="icon" class='bx bxs-factory'></i>
+                    </div>
+                    <div class="service-info1">
+                        <ul>
+                            <li>Limpieza de Almacén</li>
+                            <li>Limpieza de Fabrica</li>
+                          
+                        </ul>
+                    </div>
+                </div>

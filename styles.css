@@ -127,30 +127,41 @@ transform: translateX(-50%)
   display: none;
 }
 
+.lenguages{
+  position: absolute;
+  display:none;
+  list-style: none;
+  width: 200px;
+  background-color:rgba(10, 65, 159, 0.7);
+  z-index: 20;
+}
+.nav-list li:hover .lenguages {
+  display: block;
+}
+.lenguages li:hover{
+  background-color:rgba(0,0,0,0.5) ;
+}
+.lenguages li a {
+  color:white;
+  display: block;
+  padding: 10px;
+}
+
+.len-menu{
+  display: none;
+}
+
 
 /*================= HERO ============*/
 
 .main-hero {
-  background-image: url('img/portada.jpeg');
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60rem;
-  z-index: 2;
-  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(41, 41, 41, 0.8)), url(img/portada.jpeg);
+  background-position: center;
   background-repeat: no-repeat;
-}
-.hero-shadow{
-  content: '';
-  position: absolute;
+  background-size: cover;
   width: 100%;
-  height: 100%;
-  right: 0;
-  top: 0;
-  background-color: #2a2727;
-  opacity: 65%;
-  z-index: -1;
+  height: 100vh;
+  position: relative;
 }
 
 .hero-content{
@@ -193,6 +204,7 @@ transform: translateX(-50%)
   width: 100%;
  text-align: center;
  overflow: hidden;
+ 
 }
 
 .about-title{
@@ -414,7 +426,7 @@ footer{
 
 .logo-footer img{
   max-width: 100%;
-  height: 100%;
+  height: auto;
  
 }
 
@@ -439,7 +451,7 @@ footer p{
 
 }
 
-@media screen and (max-width:620px){
+@media screen and (max-width:835px){
 
 
   .hero-content{
@@ -453,10 +465,10 @@ footer p{
 
   .icons{
     color:white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: inline-flex;
     position: absolute;
-    top:20%;
+    top:38%;
     right: 5%;
     cursor: pointer;
   }
@@ -470,7 +482,7 @@ footer p{
     position: absolute;
     top:100%;
     right: 0;
-    min-height: 87vh;
+    min-height: 100vh;
     width: 0%;
     display: flex;
     flex-direction: column;
@@ -493,4 +505,59 @@ footer p{
   #check:checked~.nav-list{
     width: 100%;
   }
+
+  .lenguage-1{
+    display: none;
+  }
+
+  .len-menu{
+    display: flex;
+    position: absolute;
+    top:62%;
+    right: 5%;
+    z-index: 30;
+  }
+  .len-menu button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+ 
+
+  .len-menu #arrow{
+    font-size: 2rem;
+    color: white;
+    
+  }
+  .lenguages-2{
+    padding: 1rem;
+  }
+  #container-idioms{
+    display: none;
+  }
+
+  #container-idioms li a{
+    display: block;
+    margin-top: 5px;
+  }
+  .lenguages-2 ul{
+    list-style:none;
+  }
+  .lenguages-2 .idiom{
+    color: white;
+    color: white;
+    position:relative;
+    margin: 0 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .lenguages-2 ul li a{
+    color: white;
+    position:relative;
+    margin: 0 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
 }
