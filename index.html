@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amez</title>
+    <meta name="description" content="cleaning service">
+
+
+    <!--============ PRELOAD ==========-->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
 
     <!--FAVICON-->
-    <link rel="shorcut icon" href="img/gancho.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/a-amez.png" type="image/x-icon">
+    
 
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,13 +29,14 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
 ">
 
-<!-- ================ Custom CSS ==================-->
-
-<link rel="stylesheet" href="styles.css">
 
 <!--================= Boxicoins =================-->
 
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!--============ PRELOAD img ================-->
+
+<link rel="preload" href="img/portada.jpeg">
 
 </head>
 <body>
@@ -44,13 +52,14 @@
                 </div>
                 <nav class="len-menu">
                     <ul>
-                        <li class="lenguages-2"><a class="idiom">Lenguage</a>
+                        <li class="lenguages-2"><a class="idiom">Language</a>
                                 <ul id="container-idioms"> 
-                                    <li><a href="">English</a></li>
-                                    <li><a href="">French</a></li>
-                                     <li><a href="">Spanish</a></li>
+                                    <li><a href="index.html" aria-label="english">English</a></li>
+                                    <li><a href="./french/french.html" aria-label="french">French</a></li>
+                                     <li><a href="./spanish/spanish.html" aria-label="spanish">Spanish</a></li>
                                 </ul>
                         </li>
+                        
                     </ul>
                     <button id="button">
                         <i id="arrow"class='bx bx-chevron-down'></i>
@@ -69,11 +78,11 @@
                     <li class="nav-item center"><a href="#about-us">About</a></li>
                     <li class="nav-item center"><a href="#services">Services</a></li>
                     <li class="nav-item"><a href="#contact">Contact</a></li>
-                    <li class="nav-item center lenguage-1"><a href="">Lenguage</a>
+                    <li class="nav-item center lenguage-1"><a href="">Language</a>
                         <ul id="leng" class="lenguages">
-                            <li><a id="english" href="">English</a></li>
-                            <li><a id="french" href="">French</a></li>
-                            <li><a id="spanish" href="">Spanish</a></li>
+                            <li><a id="english" href="index.html">English</a></li>
+                            <li><a id="french" href="./french/french.html">French</a></li>
+                            <li><a id="spanish" href="./spanish/spanish.html">Spanish</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -81,7 +90,7 @@
 
         </header>
 
-            <div class="main-hero">
+            <div loading="lazy" class="main-hero">
             
                 <div class="hero-shadow"></div>
 
@@ -230,10 +239,14 @@
 
             <div data-aos="fade-down" class="contact-container">
             <div class="gallery-wrapper grid">
-                <img src="img/img1.png" alt="">
-                <img src="img/img2.png" alt="">
-                <img src="img/img3.png" alt="">
-                <img src="img/img4.png" alt="">
+                <img data-aos="fade-down"  src="./fotos/1.jpg" alt="">
+                <img data-aos="fade-down" src="./fotos/2.jpg" alt="">
+                <img data-aos="fade-down" src="./fotos/3.jpg" alt="">
+                <img data-aos="fade-down" src="./fotos/4.jpg" alt="">
+                <img data-aos="fade-down" src="./fotos/5.jpg" alt="">
+                <img data-aos="fade-down" src="./fotos/6.jpg" alt="">
+                <img data-aos="fade-down" src="./fotos/7.jpg" alt="">
+                <img data-aos="fade-down" src="./fotos/8.jpg" alt="">
             </div>
         </div>
 
@@ -297,7 +310,7 @@
 
 
 <div class="b-whats">
-    <a href="https://api.whatsapp.com/send?phone=5637120792" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=14388665724" target="_blank"  aria-label="link to send message to whatsapp"><i class="bx bxl-whatsapp"></i></a>
 </div>
 
 </body>
