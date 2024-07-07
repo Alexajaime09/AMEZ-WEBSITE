@@ -4,6 +4,7 @@ const idioms = document.getElementById('container-idioms')
 const leng = document.querySelectorAll('#leng a');
 
 
+
 button.addEventListener('click',function() {
     if(idioms.style.display ==='none' || idioms.style.display === ''){
         idioms.style.display = 'block';
@@ -31,3 +32,6 @@ leng.forEach((link) =>{
         }
     })
 })
+
+
+

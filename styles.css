@@ -159,7 +159,7 @@ transform: translateX(-50%)
 /*================= HERO ============*/
 
 .main-hero {
-  background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(41, 41, 41, 0.8)), url(img/portada.jpeg);
+  background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(41, 41, 41, 0.8)), url('img/portada.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,7 +374,7 @@ margin-top: 3rem;
 .button-form{
   padding: 0.7rem;
   background-color: white;
-  color: var(--lightblue);
+  
   border: none;
   cursor: pointer;
   margin-top: 7px;
@@ -382,7 +382,7 @@ margin-top: 3rem;
 }
 .button-form:hover{
 background-color:var(--darkblue);
-color: white;
+
 }
 
 #message{
@@ -390,6 +390,14 @@ color: white;
   width: 70%;
   height: 23rem
 }
+.button-form a{
+  color: var(--lightblue);
+}
+
+.button-form a:hover{
+  color: white;
+}
+
 
 
 /*WHATS BUTTON*/
@@ -416,6 +424,8 @@ color: white;
 .b-whats:hover{
   transform: translateY(5px);
 }
+
+
 
 /* ================= FOOTER =================== */
 
